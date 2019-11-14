@@ -94,7 +94,20 @@ filetype plugin indent on    " 必须 加载vim自带和插件相应的语法和
 1、NERDTree是一个用于浏览文件系统的树形资源管理外挂,它可以让你像使用Windows档案总管一样在VIM中浏览文件系统并且打开文件或目录。
 ```
 Bundle 'scrooloose/nerdtree'
-let NERDTreeWinPos='right'
+let NERDTreeWinPos='left'
 let NERDTreeWinSize=30
 map <F2> :NERDTreeToggle<CR>
 ```
+帮助文档在nerdtree\doc目录里
+
+2、YouCompleteMe 代码补全  
+##### windows安装
+1、 Add the line:
+```
+set encoding=utf-8
+```
+2、 在.vimrc添加   
+```
+Plugin 'Valloric/YouCompleteMe'
+```
+打开vim  运行：PluginInstall
